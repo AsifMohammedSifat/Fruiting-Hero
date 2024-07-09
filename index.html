@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Bust</title>
+
+    <!-- tailwind cdn and color config  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- google font  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+      .font-roboto {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .brand{
+        font-family: "Baskervville SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .hidden-icon {
+        display: none;
+      }
+    </style>
+
+    <!-- daisy ui cdn  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white">
+    <!--header-->
+    <header>
+      <nav class="container p-5 mx-auto text-white">
+        <div class="navbar bg-[#f85559] rounded-full">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="text"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <div
+                tabindex="0"
+                class="menu menu-vertical dropdown-content bg-indigo-700 rounded-box z-[1] mt-10 container mx-auto w-[300px] md:w-[500px] p-5 shadow flext items-center"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+                <li>
+                    <div class="relative">
+                      <input
+                        id="search-input"
+                        type="text"
+                        placeholder="Search"
+                        class="input input-bordered bg-white text-black rounded-full w-15 md:w-auto"
+                      />
+                      <svg
+                        
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="black"
+                        class="size-6 absolute right-7 top-5"
+                      >
+                        <path
+                        id="search-icon"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        />
+                      </svg>
+                    </div>
+                  <!-- <a class="btn w-5">Button</a> -->
+                </li>
+              </div>
+            </div>
+            <a class="btn btn-ghost text-xl brand">
+              <img src="./images/logo.png" class="w-10 block" alt="" />
+              FrutingHero</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+
+          <!-- search bar  -->
+          <div class="navbar-end invisible lg:visible">
+            <div class="relative">
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Search"
+                class="input input-bordered bg-white text-black rounded-full w-35 md:w-auto"
+              />
+              <svg
+                
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="black"
+                class="size-6 absolute right-4 top-3"
+              >
+                <path
+                id="search-icon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main  -->
+    <main></main>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
