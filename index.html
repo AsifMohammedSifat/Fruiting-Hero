@@ -84,7 +84,7 @@
                 <li>
                   <div class="relative">
                     <input
-                      id="search-input1"
+                      id="search-input-dropdown"
                       type="text"
                       placeholder="Search"
                       class="input input-bordered bg-white text-black rounded-full w-15 md:w-auto"
@@ -98,7 +98,7 @@
                       class="size-6 absolute right-7 top-5"
                     >
                       <path
-                        id="search-icon1"
+                        id="search-icon-dropdown"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
@@ -304,6 +304,53 @@
         </div>
       </div>
 
+      <!-- time section  -->
+
+      <div class="mt-16 md:mt-32 text-black container mx-auto px-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 container mx-auto place-content-between">
+          <div class="place-self-center lg:place-self-start">
+            <h1 class="text-3xl font-bold font-mono">Deal of the Day</h1>
+            <p class="text-balance">
+              Contrary to popular belief, is not simply random text. It has roots
+              in a piece of classical Latin literature from 45 BC, making it over
+              2000 years old.
+            </p>
+          </div>
+  
+          <div class="place-self-center md:place-self-end">
+            <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+              <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-3xl lg:text-6xl">
+                  <span id="days" style="--value:0;"></span>
+                </span>
+                days
+              </div>
+              <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-3xl md:text-6xl">
+                  <span id="hours" style="--value:0;"></span>
+                </span>
+                hours
+              </div>
+              <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-3xl md:text-6xl">
+                  <span id="minutes" style="--value:0;"></span>
+                </span>
+                min
+              </div>
+              <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-3xl md:text-6xl">
+                  <span id="seconds" style="--value:0;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card section  -->
+
+   
       <div class="h-screen">
 
       </div>
